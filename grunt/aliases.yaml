@@ -1,0 +1,10 @@
+js:
+  - eslint
+build:
+  - js
+start:
+  - build
+  - connect
+  - watch
+default:
+  - start
