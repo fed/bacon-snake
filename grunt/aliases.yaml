@@ -1,8 +1,11 @@
 js:
   - eslint
   - browserify
+css:
+  - postcss
 build:
   - js
+  - css
 start:
   - build
   - connect
