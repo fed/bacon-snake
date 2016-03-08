@@ -3,7 +3,7 @@ module.exports = {
     files: [
       'Gruntfile.js',
       'grunt/{,**/}*.js',
-      'src/{,**/}*.js'
+      'src/js/{,**/}*.js'
     ],
     tasks: ['js'],
     options: {
@@ -11,7 +11,7 @@ module.exports = {
     }
   },
   css: {
-    files: ['src/{,**/}*.css'],
+    files: ['src/css/{,**/}*.css'],
     options: {
       livereload: true
     }

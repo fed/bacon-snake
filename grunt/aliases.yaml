@@ -1,5 +1,6 @@
 js:
   - eslint
+  - browserify
 build:
   - js
 start:
