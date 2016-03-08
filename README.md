@@ -1,4 +1,6 @@
-# Implementing the Snake arcade game in Bacon.js
+# Snake meets Bacon.js
+
+Implementing the Snake arcade game in Bacon.js. This is a somewhat modified version of [Philip Nilsson's original idea](https://github.com/philipnilsson/Snake-Bacon).
 
 ![Snake meets Bacon.js](http://i.imgur.com/hytpjsy.png)
 
@@ -17,9 +19,7 @@ Run `npm run build` to build the app.
 
 ## Building, Running and Watching for Changes
 
-When developing, there's also a watch task that will automatically watch any of your source files for changes and refresh the page for you.
-
-To run start the app and the watch task, run `npm start`. The app will go live on http://0.0.0.0:6789/.
+When developing, Grunt's default task will automatically watch all of your source files for changes and refresh the page appropriately. To run start the app and the watch task, run `npm start`. The app will go live on http://0.0.0.0:6789/.
 
 ## Release Versions
 
