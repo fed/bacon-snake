@@ -1,18 +1,23 @@
-export function drawGame(size) {
-  var game = $('#game');
+// @TODO: Make functional
+export function drawBoard(size) {
+  let game = document.getElementById('game');
 
-  for (var i = 0; i < size.x; i++) {
-    var row = $('<div class="row" />');
+  for (let i = 0; i < size.x; i++) {
+    let row = document.createElement('div');
+    row.className = 'row';
 
-    for (var j = 0; j < size.y; j++) {
-      row.append('<span class="cell" />');
+    for (let j = 0; j < size.y; j++) {
+      let cell = document.createElement('span');
+      cell.className = 'cell';
+      row.appendChild(cell);
     }
 
-    game.append(row);
+    game.appendChild(row);
   }
 }
 
-export function fillCells(klass) {
+// @TODO: Refactor using vanilla js
+export function colorCells(klass) {
   var game = $('#game');
 
   return function (ps) {
@@ -26,19 +31,5 @@ export function fillCells(klass) {
   };
 }
 
-export let drawApple = fillCells('apple');
-export let drawSnake = fillCells('snake');
-
-export function logRestart() {
-  $('#log').html('Press "r" to restart');
-}
-
-export function logClear() {
-  $('#log').html('Press left/right to steer.');
-}
-
-export let $score = $('#score');
-
-export function setScore(score) {
-  $score.html(score);
-}
+export const drawApple = colorCells('apple');
+export const drawSnake = colorCells('snake');

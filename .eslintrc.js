@@ -5,10 +5,9 @@ module.exports = {
   },
   "env": {
     "browser": true,
-    "commonjs": true,
     "es6": true,
-    "node": true,
-    "jquery": true
+    "jquery": true,
+    "node": true
   },
   "extends": "eslint:recommended",
   "rules": {
@@ -18,6 +17,7 @@ module.exports = {
     "semi": ["error", "always"],
     "require-jsdoc": ["off"],
     "space-before-function-paren": ["error", { "anonymous": "always", "named": "never" }],
-    "keyword-spacing": ["error"]
+    "keyword-spacing": ["error"],
+    "no-console": ["off"]
   }
 };

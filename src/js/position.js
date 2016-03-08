@@ -1,35 +1,28 @@
-const SIZE_X = 20;
-const SIZE_Y = 20;
+import {SIZE_X, SIZE_Y} from './constants';
 
-export function Pos(x, y) {
+export function Position(x, y) {
   this.x = x;
   this.y = y;
 
-  this.equals = function (p) {
-    return this.x === p.x && this.y === p.y;
-  };
+  this.equals = (p) => this.x === p.x && this.y === p.y;
 
-  this.add = function (p) {
-    return new Pos(
-      (this.x + p.x + SIZE_X) % SIZE_X,
-      (this.y + p.y + SIZE_Y) % SIZE_Y
-    );
-  };
+  this.add = (p) => new Position(
+    (this.x + p.x + SIZE_X) % SIZE_X,
+    (this.y + p.y + SIZE_Y) % SIZE_Y
+  );
 }
 
-export const size = new Pos(SIZE_X, SIZE_Y);
-
-export function randomPos() {
-  return new Pos(
+export function getRandomPosition() {
+  return new Position(
     Math.floor(Math.random() * SIZE_X),
     Math.floor(Math.random() * SIZE_Y)
   );
 }
 
 export function rotateRight(pos) {
-  return new Pos(-pos.y, pos.x);
+  return new Position(-pos.y, pos.x);
 }
 
 export function rotateLeft(pos) {
-  return new Pos(pos.y, -pos.x);
+  return new Position(pos.y, -pos.x);
 }

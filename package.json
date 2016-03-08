@@ -24,7 +24,8 @@
   "license": "MIT",
   "dependencies": {
     "baconjs": "^0.7.83",
-    "jquery": "^2.2.1"
+    "jquery": "^2.2.1",
+    "lodash": "^4.6.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.3",

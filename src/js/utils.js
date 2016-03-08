@@ -1,13 +1,7 @@
 import Bacon from 'baconjs';
 
-export function contains(arr, x) {
-  for (var i in arr) {
-    if (arr[i].equals(x)) {
-      return true;
-    }
-  }
-
-  return false;
+export function contains(haystack, needle) {
+  return haystack.filter((pos) => pos.equals(needle)).length;
 }
 
 export function slidingWindowBy(lengthObs) {
