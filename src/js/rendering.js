@@ -1,13 +1,12 @@
-// @TODO: Make functional
 export function drawBoard(size) {
   let game = document.getElementById('game');
 
-  for (let i = 0; i < size.x; i++) {
+  for (let i = 0; i < size.y; i++) {
     let row = document.createElement('div');
 
     row.className = 'row';
 
-    for (let j = 0; j < size.y; j++) {
+    for (let j = 0; j < size.x; j++) {
       let cell = document.createElement('span');
 
       cell.className = 'cell';
@@ -26,7 +25,6 @@ export function colorCells(classname) {
 
     Array.from(game.querySelectorAll('.' + classname)).forEach((cell) => {
       cell.classList.remove(classname);
-      console.log(cell, 'deleting classname ', classname);
     });
 
     points.forEach((point) => {
