@@ -3,8 +3,7 @@ module.exports = {
     options: {
       hostname: '*',
       port: process.env.PORT || 6789,
-      base: ['.', 'src'],
-      directory: 'src',
+      base: ['dist'],
       livereload: true
     }
   }

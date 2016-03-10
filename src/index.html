@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Implementing the Snake arcade game in Bacon.js</title>
-  <link rel="stylesheet" href="app.css" />
+  <link href="css/app.min.css" rel="stylesheet" />
 </head>
 <body>
 
-  <div class="score">Score: <span id="score"></span></div>
-  <div class="control">Press left/right to play.</div>
+  <p>Score: <span id="score"></span></p>
+  <p id="control">Press left/right to play.</p>
 
-  <div id="game"></div>
+  <div id="game" class="board"></div>
 
-  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="/node_modules/baconjs/dist/Bacon.min.js"></script>
-  <script src="app.js"></script>
-
+  <script src="js/bundle.js"></script>
 </body>
 </html>

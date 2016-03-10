@@ -1,7 +1,15 @@
 js:
   - eslint
+  - browserify
+css:
+  - postcss
+html:
+  - copy:html
 build:
+  - clean
   - js
+  - css
+  - html
 start:
   - build
   - connect

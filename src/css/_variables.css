@@ -1,0 +1,9 @@
+$font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$color-green: #4caf50;
+$color-red: #ff5722;
+$color-gray: #eee;
+$color-white: #fff;
+
+$board-tile-width: 30px;
+$board-tile-height: 30px;

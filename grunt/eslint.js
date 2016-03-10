@@ -5,6 +5,6 @@ module.exports = {
   target: [
     'Gruntfile.js',
     'grunt/{,**/}*.js',
-    'src/{,**/}*.js'
+    'src/js/{,**/}*.js'
   ]
 };

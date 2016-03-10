@@ -3,14 +3,9 @@ module.exports = {
     "ecmaVersion": 6,
     "sourceType": "module",
   },
-  "globals": {
-    "Bacon": true
-  },
   "env": {
     "browser": true,
-    "commonjs": true,
     "es6": true,
-    "jquery": true,
     "node": true
   },
   "extends": "eslint:recommended",
@@ -19,8 +14,10 @@ module.exports = {
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
     "semi": ["error", "always"],
-    "require-jsdoc": ["off"],
     "space-before-function-paren": ["error", { "anonymous": "always", "named": "never" }],
-    "keyword-spacing": ["error"]
+    "newline-after-var": ["error", "always"],
+    "keyword-spacing": ["error"],
+    "require-jsdoc": ["off"],
+    "no-console": ["off"]
   }
 };

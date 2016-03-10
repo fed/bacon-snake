@@ -1,4 +1,6 @@
-# Implementing the Snake arcade game in Bacon.js
+# Snake meets Bacon.js
+
+Snake arcade game implementation in Bacon.js using ES6. This is a somewhat modified version of [Philip Nilsson's implementation](https://github.com/philipnilsson/Snake-Bacon). Most of the topics on [this tutorial](http://philipnilsson.github.io/badness/) still apply to this project.
 
 ![Snake meets Bacon.js](http://i.imgur.com/hytpjsy.png)
 
@@ -13,13 +15,7 @@ Grunt CLI can be installed globally for convenience with `npm install -g grunt-c
 
 ## Building
 
-Run `npm run build` to build the app.
-
-## Building, Running and Watching for Changes
-
-When developing, there's also a watch task that will automatically watch any of your source files for changes and refresh the page for you.
-
-To run start the app and the watch task, run `npm start`. The app will go live on http://0.0.0.0:6789/.
+Run `npm run build` to build the app. For development purposes, Grunt's default task will automatically watch all of your source files for changes, build the appropriate distribution files and refresh the page for you. To run start the app and the watch task, run `npm start`. The app will go live on http://0.0.0.0:6789/.
 
 ## Release Versions
 
