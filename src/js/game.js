@@ -52,6 +52,7 @@ export function game(position) {
 export function repeated(game, restart) {
   let gm = function () {
     var tmp = game();
+
     tmp.onEnd(logRestart);
     return tmp;
   };
