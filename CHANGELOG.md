@@ -1,4 +1,9 @@
 
+# 0.1.1
+
+- Fix error when rendering board `ce01cb5`
+- Clean up work `647655c`
+
 # 0.1.0
 
 - Update release task `b7c810e`
