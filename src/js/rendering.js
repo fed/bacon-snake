@@ -1,25 +1,25 @@
-export function drawBoard(size) {
-  let game = document.getElementById('game');
+import range from 'lodash/range';
 
-  for (let i = 0; i < size.y; i++) {
+const game = document.getElementById('game');
+
+export function drawBoard(size) {
+  range(size.y).forEach(() => {
     let row = document.createElement('div');
 
     row.className = 'row';
 
-    for (let j = 0; j < size.x; j++) {
+    range(size.x).forEach(() => {
       let cell = document.createElement('span');
 
       cell.className = 'cell';
       row.appendChild(cell);
-    }
+    });
 
     game.appendChild(row);
-  }
+  });
 }
 
 export function colorCells(classname) {
-  let game = document.getElementById('game');
-
   return function (points) {
     let rows = Array.from(game.querySelectorAll('.row'));
 
