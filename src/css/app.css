@@ -1,4 +1,4 @@
-@import "_variables.css";
+@import "variables";
 
 body {
   font-family: $font-family-base;
