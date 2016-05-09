@@ -1,6 +1,6 @@
 module.exports = {
   options: {
-    configFile: '.eslintrc.js'
+    configFile: '.eslintrc'
   },
   target: [
     'Gruntfile.js',

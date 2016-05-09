@@ -4,8 +4,6 @@ export function Position(x, y) {
   this.x = x;
   this.y = y;
 
-  this.equals = (p) => this.x === p.x && this.y === p.y;
-
   this.add = (p) => new Position(
     (this.x + p.x + SIZE_X) % SIZE_X,
     (this.y + p.y + SIZE_Y) % SIZE_Y

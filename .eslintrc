@@ -1,4 +1,4 @@
-module.exports = {
+{
   "parserOptions": {
     "ecmaVersion": 6,
     "sourceType": "module",
@@ -20,4 +20,4 @@ module.exports = {
     "require-jsdoc": ["off"],
     "no-console": ["off"]
   }
-};
+}

@@ -1,15 +1,15 @@
-import Bacon from 'baconjs';
+import bacon from 'baconjs';
 
 import {SIZE_X, SIZE_Y} from './constants';
 import {Position} from './position';
 import {drawBoard, drawApple, drawSnake} from './rendering';
-import {setScore} from './status';
+import {logScore} from './status';
 import {slidingWindowBy, separateBy} from './utils';
 import {getPosition, game, repeated} from './game';
 import {bindInputs} from './controls';
 
-Bacon.Observable.prototype.slidingWindowBy = slidingWindowBy;
-Bacon.separateBy = separateBy;
+bacon.Observable.prototype.slidingWindowBy = slidingWindowBy;
+bacon.separateBy = separateBy;
 
 const inputs = bindInputs();
 const position = getPosition.bind(null, inputs);
@@ -21,5 +21,5 @@ drawBoard(size);
 repeated(newGame, inputs.restart).onValue((e) => {
   drawSnake(e.snake);
   drawApple([e.apple]);
-  setScore(e.score);
+  logScore(e.score);
 });

@@ -20,12 +20,14 @@ export function drawBoard(size) {
 }
 
 export function colorCells(classname) {
-  return function (points) {
+  return (points) => {
     let rows = Array.from(game.querySelectorAll('.row'));
 
-    Array.from(game.querySelectorAll('.' + classname)).forEach((cell) => {
-      cell.classList.remove(classname);
-    });
+    Array
+      .from(game.getElementsByClassName(classname))
+      .forEach((cell) => {
+        cell.classList.remove(classname);
+      });
 
     points.forEach((point) => {
       let row = rows[point.y];
