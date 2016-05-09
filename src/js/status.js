@@ -9,6 +9,6 @@ export function logControls() {
   control.textContent = 'Use the left and right arrows to play.';
 }
 
-export function setScore(points) {
+export function logScore(points) {
   score.textContent = points;
 }
